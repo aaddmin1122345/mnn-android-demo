@@ -1,0 +1,4 @@
+# ninja log v5
+0	294	1733149749	CMakeFiles/mnncore.dir/src/main/jni/mnnportraitnative.cpp.o	8d27ff2f936fbaa1
+0	526	1733149749	CMakeFiles/mnncore.dir/src/main/jni/mnnnetnative.cpp.o	2d699bb6ff27c0c4
+526	566	1733149749	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmnncore.so	b96be9f1a6bc0edf

@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/qxqzx/Downloads/test/aa/android/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/qxqzx/Downloads/test/tf-lite/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/qxqzx/Downloads/test/tf-lite/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/qxqzx/Downloads/test/tf-lite/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DMNN_USE_LOGCAT -Dmnncore_EXPORTS -I../../../../includes  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fopenmp -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -fomit-frame-pointer -fstrict-aliasing -ffunction-sections -fdata-sections -ffast-math -fno-rtti -fno-exceptions -flax-vector-conversions -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/mnncore.dir/src/main/jni/mnnnetnative.cpp.o -c /home/qxqzx/Downloads/test/aa/android/app/src/main/jni/mnnnetnative.cpp",
+  "file": "/home/qxqzx/Downloads/test/aa/android/app/src/main/jni/mnnnetnative.cpp"
+},
+
+{
+  "directory": "/home/qxqzx/Downloads/test/aa/android/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/qxqzx/Downloads/test/tf-lite/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/qxqzx/Downloads/test/tf-lite/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/qxqzx/Downloads/test/tf-lite/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DMNN_USE_LOGCAT -Dmnncore_EXPORTS -I../../../../includes  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fopenmp -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -fomit-frame-pointer -fstrict-aliasing -ffunction-sections -fdata-sections -ffast-math -fno-rtti -fno-exceptions -flax-vector-conversions -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/mnncore.dir/src/main/jni/mnnportraitnative.cpp.o -c /home/qxqzx/Downloads/test/aa/android/app/src/main/jni/mnnportraitnative.cpp",
+  "file": "/home/qxqzx/Downloads/test/aa/android/app/src/main/jni/mnnportraitnative.cpp"
+}
+]

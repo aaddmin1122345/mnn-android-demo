@@ -1,0 +1,2 @@
+ninja: Entering directory `/home/qxqzx/Downloads/test/aa/android/app/.cxx/cmake/debug/armeabi-v7a'
+ninja: no work to do.

@@ -1,0 +1,21 @@
+{
+  "buildFiles": [
+    "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/wdmchaft/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/wdmchaft/Nutstore\\ Files/.symlinks/Nutstore/mnn/android/app/.cxx/cmake/release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "mnncore-Release-armeabi-v7a": {
+      "artifactName": "mnncore",
+      "buildCommand": "/Users/wdmchaft/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/wdmchaft/Nutstore\\ Files/.symlinks/Nutstore/mnn/android/app/.cxx/cmake/release/armeabi-v7a --target mnncore",
+      "abi": "armeabi-v7a",
+      "output": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/build/intermediates/cmake/release/obj/armeabi-v7a/libmnncore.so"
+    },
+    "MNN-Release-armeabi-v7a": {
+      "artifactName": "MNN",
+      "abi": "armeabi-v7a",
+      "output": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/libs/armeabi-v7a/libMNN.so"
+    }
+  }
+}

@@ -1,0 +1,236 @@
+@startuml
+
+title __MNNDEMO's Class Diagram__\n
+
+  namespace com.taobao.android.mnn {
+    namespace emo {
+      class com.taobao.android.mnndemo.CameraView {
+          {static} - MINIMUM_PREVIEW_SIZE : int
+          {static} - PREVIEW_CALLBACK_FREQUENCE : int
+          {static} - TAG : String
+          - mCamera : Camera
+          - mOrientationAngle : int
+          - mParams : Parameters
+          - mPreviewSize : Size
+          - previewCallbackCount : int
+          + CameraView()
+          + CameraView()
+          + onPause()
+          + onPreviewFrame()
+          + onResume()
+          + setCameraDisplayOrientation()
+          + setPreviewCallback()
+          + surfaceChanged()
+          + surfaceCreated()
+          + surfaceDestroyed()
+          - getPropPreviewSize()
+          - openCamera()
+          - releaseCamera()
+      }
+    }
+  }
+  
+
+  namespace com.taobao.android.mnn {
+    namespace emo {
+      class com.taobao.android.mnndemo.CameraView.CompareSizesByArea {
+          + compare()
+      }
+    }
+  }
+  
+
+  namespace com.taobao.android.mnn {
+    namespace emo {
+      interface com.taobao.android.mnndemo.CameraView.PreviewCallback {
+          {abstract} + onGetPreviewOptimalSize()
+          {abstract} + onPreviewFrame()
+      }
+    }
+  }
+  
+
+  namespace com.taobao.android.mnn {
+    namespace emo {
+      class com.taobao.android.mnndemo.ImageActivity {
+          - InputHeight : int
+          - InputWidth : int
+          - MobileWordsFileName : String
+          - TargetPic : String
+          - mBitmap : Bitmap
+          - mImageView : ImageView
+          - mMobileTaiWords : List<String>
+          - mResultText : TextView
+          - mTextView : TextView
+          - mTimeText : TextView
+          + onClick()
+          # onCreate()
+          # onDestroy()
+          - prepareMobileNet()
+      }
+    }
+  }
+  
+
+  namespace com.taobao.android.mnn {
+    namespace emo {
+      class com.taobao.android.mnndemo.ImageActivity.ImageProcessResult {
+          + inferenceTimeCost : float
+          + result : String
+      }
+    }
+  }
+  
+
+  namespace com.taobao.android.mnn {
+    namespace emo {
+      class com.taobao.android.mnndemo.ImageActivity.ImageProcessTask {
+          # doInBackground()
+          # onPostExecute()
+      }
+    }
+  }
+  
+
+  namespace com.taobao.android.mnn {
+    namespace emo {
+      class com.taobao.android.mnndemo.ImageActivity.NetPrepareTask {
+          # doInBackground()
+          # onPostExecute()
+      }
+    }
+  }
+  
+
+  namespace com.taobao.android.mnn {
+    namespace emo {
+      class com.taobao.android.mnndemo.OpenGLTestActivity {
+          - mTextView : TextView
+          # onCreate()
+          # onDestroy()
+          # onPause()
+          # onResume()
+      }
+    }
+  }
+  
+
+  namespace com.taobao.android.mnn {
+    namespace emo {
+      class com.taobao.android.mnndemo.PortraitActivity {
+          ~ keyPaint : Paint
+          - initViewRunnable : Runnable
+          - mDrawSurfaceHolder : SurfaceHolder
+          - mMobileModelFileName : String
+          - mMobileModelPath : String
+          - mRotateDegree : int
+          - netInputHeight : int
+          - netInputWidth : int
+          - netOutputHeight : int
+          - netOutputWidth : int
+          + onRequestPermissionsResult()
+          + prepareModels()
+          + prepareNet()
+          # onCreate()
+          # onDestroy()
+          # onPause()
+          # onResume()
+          ~ cameraDetect()
+          ~ detectScreenRotate()
+          ~ drawBitmap()
+      }
+    }
+  }
+  
+
+  namespace com.taobao.android.mnn {
+    namespace emo {
+      class com.taobao.android.mnndemo.VideoActivity {
+          ~ mHandle : Handler
+          ~ mThread : HandlerThread
+          - MAX_CLZ_SIZE : int
+          - MobileInputHeight : int
+          - MobileInputWidth : int
+          - MobileModelFileName : String
+          - MobileWordsFileName : String
+          - SqueezeInputHeight : int
+          - SqueezeInputWidth : int
+          - SqueezeModelFileName : String
+          - SqueezeWordsFileName : String
+          - TAG : String
+          - mDrop : AtomicBoolean
+          - mFirstResult : TextView
+          - mForwardTypeSpinner : Spinner
+          - mLockUIRender : AtomicBoolean
+          - mMobileModelPath : String
+          - mMobileTaiWords : List<String>
+          - mModelSpinner : Spinner
+          - mMoreDemoSpinner : Spinner
+          - mRotateDegree : int
+          - mSecondResult : TextView
+          - mSelectedModelIndex : int
+          - mSqueezeModelPath : String
+          - mSqueezeTaiWords : List<String>
+          - mThirdResult : TextView
+          - mThreadNumSpinner : Spinner
+          - mTimeTextView : TextView
+          + onItemSelected()
+          + onNothingSelected()
+          + onRequestPermissionsResult()
+          # onCreate()
+          # onDestroy()
+          # onPause()
+          # onResume()
+          ~ detectScreenRotate()
+          - clearUIForPrepareNet()
+          - handlePreViewCallBack()
+          - prepareModels()
+          - prepareNet()
+      }
+    }
+  }
+  
+
+  com.taobao.android.mnndemo.CameraView .up.|> android.hardware.Camera.PreviewCallback
+  com.taobao.android.mnndemo.CameraView .up.|> android.view.SurfaceHolder.Callback
+  com.taobao.android.mnndemo.CameraView -up-|> android.view.SurfaceView
+  com.taobao.android.mnndemo.CameraView o-- com.taobao.android.mnndemo.CameraView.PreviewCallback : mPreviewCallback
+  com.taobao.android.mnndemo.CameraView +-down- com.taobao.android.mnndemo.CameraView.CompareSizesByArea
+  com.taobao.android.mnndemo.CameraView +-down- com.taobao.android.mnndemo.CameraView.PreviewCallback
+  com.taobao.android.mnndemo.CameraView.CompareSizesByArea .up.|> java.util.Comparator
+  com.taobao.android.mnndemo.ImageActivity .up.|> android.view.View.OnClickListener
+  com.taobao.android.mnndemo.ImageActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.taobao.android.mnndemo.ImageActivity o-- com.taobao.android.mnn.MNNNetInstance.Session.Tensor : mInputTensor
+  com.taobao.android.mnndemo.ImageActivity o-- com.taobao.android.mnn.MNNNetInstance : mNetInstance
+  com.taobao.android.mnndemo.ImageActivity o-- com.taobao.android.mnn.MNNNetInstance.Session : mSession
+  com.taobao.android.mnndemo.ImageActivity +-down- com.taobao.android.mnndemo.ImageActivity.ImageProcessResult
+  com.taobao.android.mnndemo.ImageActivity +-down- com.taobao.android.mnndemo.ImageActivity.ImageProcessTask
+  com.taobao.android.mnndemo.ImageActivity +-down- com.taobao.android.mnndemo.ImageActivity.NetPrepareTask
+  com.taobao.android.mnndemo.ImageActivity.ImageProcessTask -up-|> android.os.AsyncTask
+  com.taobao.android.mnndemo.ImageActivity.NetPrepareTask -up-|> android.os.AsyncTask
+  com.taobao.android.mnndemo.OpenGLTestActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.taobao.android.mnndemo.OpenGLTestActivity o-- com.taobao.android.opengl.CameraRenderer : mRenderer
+  com.taobao.android.mnndemo.PortraitActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.taobao.android.mnndemo.PortraitActivity o-- com.taobao.android.utils.PortraitCameraView : mCameraView
+  com.taobao.android.mnndemo.PortraitActivity o-- com.taobao.android.mnn.MNNNetInstance.Config : mConfig
+  com.taobao.android.mnndemo.PortraitActivity o-- com.taobao.android.mnn.MNNNetInstance.Session.Tensor : mInputTensor
+  com.taobao.android.mnndemo.PortraitActivity o-- com.taobao.android.mnn.MNNNetInstance : mNetInstance
+  com.taobao.android.mnndemo.PortraitActivity o-- com.taobao.android.mnn.MNNNetInstance.Session.Tensor : mOutputTensor
+  com.taobao.android.mnndemo.PortraitActivity o-- com.taobao.android.mnn.MNNNetInstance.Session : mSession
+  com.taobao.android.mnndemo.VideoActivity .up.|> android.widget.AdapterView.OnItemSelectedListener
+  com.taobao.android.mnndemo.VideoActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.taobao.android.mnndemo.VideoActivity o-- com.taobao.android.mnndemo.CameraView : mCameraView
+  com.taobao.android.mnndemo.VideoActivity o-- com.taobao.android.mnn.MNNNetInstance.Config : mConfig
+  com.taobao.android.mnndemo.VideoActivity o-- com.taobao.android.mnn.MNNNetInstance.Session.Tensor : mInputTensor
+  com.taobao.android.mnndemo.VideoActivity o-- com.taobao.android.mnn.MNNNetInstance : mNetInstance
+  com.taobao.android.mnndemo.VideoActivity o-- com.taobao.android.mnn.MNNNetInstance.Session : mSession
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,50 @@
+{
+  "stringTable": {
+    "0": "/home/qxqzx/Downloads/test/mnn/app/.cxx/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=/home/qxqzx/Downloads/test/tf-lite/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/qxqzx/Downloads/test/tf-lite/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DMNN_USE_LOGCAT -Dmnncore_EXPORTS -I../../../../includes -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fopenmp -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -fomit-frame-pointer -fstrict-aliasing -ffunction-sections -fdata-sections -ffast-math -fno-rtti -fno-exceptions -flax-vector-conversions -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/home/qxqzx/Downloads/test/mnn/app/CMakeLists.txt",
+    "/home/qxqzx/Downloads/test/tf-lite/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/home/qxqzx/Downloads/test/tf-lite/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/home/qxqzx/Downloads/test/tf-lite/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/qxqzx/Downloads/test/mnn/app/.cxx/cmake/debug/arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "/home/qxqzx/Downloads/test/tf-lite/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/qxqzx/Downloads/test/mnn/app/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "mnncore-Debug-arm64-v8a": {
+      "buildCommand": "/home/qxqzx/Downloads/test/tf-lite/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/qxqzx/Downloads/test/mnn/app/.cxx/cmake/debug/arm64-v8a\" mnncore",
+      "buildType": "debug",
+      "toolchain": "1340444260",
+      "abi": "arm64-v8a",
+      "artifactName": "mnncore",
+      "files": [
+        {
+          "src": "/home/qxqzx/Downloads/test/mnn/app/src/main/jni/mnnnetnative.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/home/qxqzx/Downloads/test/mnn/app/src/main/jni/mnnportraitnative.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/home/qxqzx/Downloads/test/mnn/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmnncore.so",
+      "runtimeFiles": [
+        "/home/qxqzx/Downloads/test/mnn/app/libs/arm64-v8a/libMNN.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "1340444260": {
+      "cppCompilerExecutable": "/home/qxqzx/Downloads/test/tf-lite/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

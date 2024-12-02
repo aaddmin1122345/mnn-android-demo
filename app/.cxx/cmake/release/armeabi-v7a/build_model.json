@@ -1,0 +1,71 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android",
+      "sdkFolder": "/Users/wdmchaft/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/build/intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app",
+      "makeFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/.cxx",
+      "cxxFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx",
+      "ndkFolder": "/Users/wdmchaft/Library/Android/sdk/ndk/21.1.6352462",
+      "ndkVersion": "21.1.6352462",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [
+      "-DANDROID_ARM_NEON\u003dTRUE",
+      "-DANDROID_PLATFORM\u003dandroid-21",
+      "-DANDROID_STL\u003dc++_shared"
+    ],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "release",
+    "soFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/build/intermediates/cmake/release/lib",
+    "objFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/build/intermediates/cmake/release/obj",
+    "jsonFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cmake/release",
+    "gradleBuildOutputFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cxx/release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cmake/release/armeabi-v7a",
+  "jsonFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cmake/release/armeabi-v7a/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cxx/release/armeabi-v7a",
+  "objFolder": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/build/intermediates/cmake/release/obj/armeabi-v7a",
+  "buildCommandFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cmake/release/armeabi-v7a/build_command.txt",
+  "buildOutputFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cmake/release/armeabi-v7a/build_output.txt",
+  "modelOutputFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cmake/release/armeabi-v7a/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cxx/release/armeabi-v7a/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cxx/release/armeabi-v7a/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cxx/release/armeabi-v7a/build_generation_state.json",
+    "cacheKeyFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cxx/release/armeabi-v7a/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cxx/release/armeabi-v7a/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cxx/release/armeabi-v7a/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cxx/release/armeabi-v7a/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cmake/release/armeabi-v7a/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/wdmchaft/Nutstore Files/.symlinks/Nutstore/mnn/android/app/.cxx/cmake/release/armeabi-v7a/compile_commands.json"
+}

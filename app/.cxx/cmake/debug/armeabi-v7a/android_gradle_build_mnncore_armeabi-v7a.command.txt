@@ -1,0 +1,7 @@
+Executable : /home/qxqzx/Downloads/test/tf-lite/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/home/qxqzx/Downloads/test/aa/android/app/.cxx/cmake/debug/armeabi-v7a
+mnncore
+jvmArgs : 
+
